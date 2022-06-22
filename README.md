@@ -6,18 +6,13 @@ In this repo you will find multidimensional expectation values (RDMs and CASPT2 
 
 The system in question is the ground state of N2. and the methods used are RHF, CASSCF, and CASPT2. The converged CASSCF orbitals are used in the CASPT2 procedure, not the pseudo-canonical ones.
 
---------------------------------------------
-|Basis set             |cc-pVDZ            |
---------------------------------------------
-|Density-fitting basis |cc-pVTZ-jkfit      |
---------------------------------------------
-|Bond length           |1.098 Angstrom     |
---------------------------------------------
-|No. inactive MOs      |4                  |
---------------------------------------------
-|No. active MOs        |6                  |
---------------------------------------------
-|No. secondary MOs     |18                 |
---------------------------------------------
+```
+Basis set:               cc-pVDZ            
+Density-fitting basis:   cc-pVTZ-jkfit      
+Bond length:             1.098 Angstrom     
+No. inactive MOs:        4                  
+No. active MOs:          6                  
+No. secondary MOs:       18                 
+```
 
 For more information about the calculation procedure, see the bagel input and output files.
