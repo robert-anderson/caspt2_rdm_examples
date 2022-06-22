@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 '''
 load spinfree RDM and CASPT2 intermediate tensors and demonstrate consistency with respect to:
     - hermiticity
@@ -12,7 +12,6 @@ where the sum runs over spin indices
 '''
 
 import numpy as np
-from scipy import special
 
 # ascertain number of orbitals and electrons from the 1RDM
 rdm1 = np.load('rdm1.npy')
@@ -24,9 +23,6 @@ assert np.allclose(rdm1, rdm1.transpose(1, 0))
 
 def one_trace_fac(rank):
     return nelec-rank+1
-
-def comb(n, r):
-    return special.comb(n, r, exact=True)
 
 def trace_fac(rank_senior, rank_junior):
     out = 1
