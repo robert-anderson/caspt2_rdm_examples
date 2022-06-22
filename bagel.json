@@ -1,0 +1,37 @@
+{
+    "bagel" : [
+        {
+            "geometry": [
+                {
+                    "xyz": [0.0, 0.0, 0.0],
+                    "atom": "N"
+                },
+                {
+                    "xyz": [1.098, 0.0, 0.0],
+                    "atom": "N"
+                }
+            ],
+            "df_basis": "/home/anderson/work/bagel/src/basis/cc-pvdz-jkfit.json",
+            "basis": "/home/anderson/work/bagel/src/basis/cc-pvdz.json",
+            "angstrom": true,
+            "title": "molecule"
+        },
+        {
+            "title" : "hf"
+        },
+        {
+            "title"  : "casscf",
+            "canonical" : false,
+            "nstate" : [1],
+            "maxiter" : 100,
+            "nact" : 6,
+            "nclosed" : 4
+        },
+        {
+            "title" : "smith",
+            "method" : "caspt2",
+            "frozen" : false,
+            "thresh_overlap": 1e-8
+        }
+    ]
+}

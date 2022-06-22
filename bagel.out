@@ -1,0 +1,258 @@
+  * process grid (1, 1) will be used
+    pcal011                         
+
+  * using 8 threads per process
+
+  ===============================================================
+    BAGEL - Freshly leavened quantum chemistry                   
+  ===============================================================
+
+  *** Geometry ***
+
+  { "atom" : "N", "xyz" : [      0.000000,      0.000000,      0.000000 ] },
+  { "atom" : "N", "xyz" : [      2.074919,      0.000000,      0.000000 ] },
+
+  Number of auxiliary basis functions:      140
+
+  Since a DF basis is specified, we compute 2- and 3-index integrals:
+    o Being stored without compression. Storage requirement is 0.001 GB
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.01
+       - 2-index ints                              0.00
+       - computing inverse                         0.15
+        elapsed time:        0.17 sec.
+
+
+  Number of basis functions:       28
+  Number of electrons      :       14
+
+
+    * METHOD: MOLECULE                             0.18
+
+       - Overlap matrix                            0.00
+       - Hcore matrix                              0.00
+       - Overlap orthog                            0.00
+
+  *** RHF ***
+
+  === Nuclear Repulsion ===
+  
+    23.6153764324
+
+      * DIIS with orbital gradients will be used.
+
+       - SCF startup                               0.02
+
+  === RHF iteration (/home/anderson/work/bagel/src/basis/cc-pvdz.json) ===
+  
+               o Fock build                                  0.00
+      0       -108.93456485          0.01313211           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      1       -108.95262938          0.00401730           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      2       -108.95370502          0.00088858           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      3       -108.95377913          0.00006295           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      4       -108.95377948          0.00000757           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      5       -108.95377949          0.00000060           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      6       -108.95377949          0.00000013           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      7       -108.95377949          0.00000002           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      8       -108.95377949          0.00000000           0.00
+  
+    * SCF iteration converged.
+
+    * Permanent dipole moment:
+           (    0.000000,     0.000000,    -0.000000) a.u.
+
+
+    * METHOD: HF                                   0.03
+
+  ---------------------------
+      CASSCF calculation     
+  ---------------------------
+
+    * nstate   :      1
+    * nclosed  :      4
+    * nact     :      6
+    * nvirt    :     18
+  === CASSCF iteration (/home/anderson/work/bagel/src/basis/cc-pvdz.json) ===
+
+    * Using the second-order algorithm
+
+      0  0      -109.02154254     9.85e-03      0.00
+
+         res : 1.35e-01   lamb: 1.10e+00   eps : -6.79e-03   step: 9.92e-01    0.00
+         res : 6.82e-02   lamb: 1.00e+00   eps : -4.71e-02   step: 5.43e-01    0.00
+         res : 9.40e-03   lamb: 1.00e+00   eps : -4.93e-02   step: 5.05e-01    0.00
+         res : 1.98e-03   lamb: 1.00e+00   eps : -4.93e-02   step: 5.06e-01    0.00
+         res : 2.95e-04   lamb: 1.00e+00   eps : -4.93e-02   step: 5.06e-01    0.00
+         res : 3.54e-05   lamb: 1.00e+00   eps : -4.93e-02   step: 5.06e-01    0.00
+      1  0      -109.05141116     1.50e-03      0.01
+
+         res : 2.64e-02   lamb: 1.00e+00   eps : -1.23e-02   step: 8.77e-01    0.00
+         res : 1.14e-02   lamb: 1.00e+00   eps : -1.37e-02   step: 9.92e-01    0.00
+         res : 4.09e-03   lamb: 1.00e+00   eps : -1.38e-02   step: 1.00e+00    0.00
+         res : 7.62e-04   lamb: 1.00e+00   eps : -1.38e-02   step: 1.00e+00    0.00
+         res : 1.42e-04   lamb: 1.00e+00   eps : -1.38e-02   step: 1.00e+00    0.00
+         res : 7.98e-06   lamb: 1.00e+00   eps : -1.38e-02   step: 1.00e+00    0.00
+      2  0      -109.07980357     4.79e-03      0.01
+
+         res : 3.06e-02   lamb: 1.00e+00   eps : -1.21e-02   step: 3.51e-01    0.00
+         res : 2.25e-02   lamb: 1.00e+00   eps : -1.45e-02   step: 4.36e-01    0.00
+         res : 7.09e-03   lamb: 1.00e+00   eps : -1.46e-02   step: 4.50e-01    0.00
+         res : 5.99e-04   lamb: 1.00e+00   eps : -1.46e-02   step: 4.50e-01    0.00
+         res : 2.40e-04   lamb: 1.00e+00   eps : -1.46e-02   step: 4.50e-01    0.00
+         res : 2.78e-05   lamb: 1.00e+00   eps : -1.46e-02   step: 4.50e-01    0.00
+      3  0      -109.08931788     8.66e-04      0.01
+
+         res : 1.05e-02   lamb: 1.00e+00   eps : -7.26e-04   step: 9.23e-02    0.00
+         res : 4.98e-03   lamb: 1.00e+00   eps : -8.54e-04   step: 1.14e-01    0.00
+         res : 1.17e-03   lamb: 1.00e+00   eps : -8.60e-04   step: 1.16e-01    0.00
+         res : 2.49e-04   lamb: 1.00e+00   eps : -8.61e-04   step: 1.16e-01    0.00
+         res : 6.01e-05   lamb: 1.00e+00   eps : -8.61e-04   step: 1.16e-01    0.00
+         res : 1.51e-05   lamb: 1.00e+00   eps : -8.61e-04   step: 1.16e-01    0.00
+         res : 2.79e-06   lamb: 1.00e+00   eps : -8.61e-04   step: 1.16e-01    0.00
+      4  0      -109.08979183     9.51e-05      0.01
+
+         res : 1.20e-03   lamb: 1.00e+00   eps : -7.86e-06   step: 8.64e-03    0.00
+         res : 5.75e-04   lamb: 1.00e+00   eps : -9.59e-06   step: 1.11e-02    0.00
+         res : 1.14e-04   lamb: 1.00e+00   eps : -9.64e-06   step: 1.13e-02    0.00
+         res : 2.00e-05   lamb: 1.00e+00   eps : -9.64e-06   step: 1.13e-02    0.00
+         res : 4.73e-06   lamb: 1.00e+00   eps : -9.64e-06   step: 1.13e-02    0.00
+         res : 1.11e-06   lamb: 1.00e+00   eps : -9.64e-06   step: 1.13e-02    0.00
+      5  0      -109.08979715     9.63e-06      0.01
+
+         res : 1.30e-04   lamb: 1.00e+00   eps : -9.33e-08   step: 1.03e-03    0.00
+         res : 5.33e-05   lamb: 1.00e+00   eps : -1.11e-07   step: 1.27e-03    0.00
+         res : 1.13e-05   lamb: 1.00e+00   eps : -1.12e-07   step: 1.28e-03    0.00
+         res : 2.19e-06   lamb: 1.00e+00   eps : -1.12e-07   step: 1.28e-03    0.00
+         res : 4.60e-07   lamb: 1.00e+00   eps : -1.12e-07   step: 1.28e-03    0.00
+         res : 1.12e-07   lamb: 1.00e+00   eps : -1.12e-07   step: 1.28e-03    0.00
+      6  0      -109.08979721     1.12e-06      0.01
+
+         res : 1.48e-05   lamb: 1.00e+00   eps : -1.22e-09   step: 1.17e-04    0.00
+         res : 5.92e-06   lamb: 1.00e+00   eps : -1.44e-09   step: 1.44e-04    0.00
+         res : 1.32e-06   lamb: 1.00e+00   eps : -1.45e-09   step: 1.45e-04    0.00
+         res : 2.77e-07   lamb: 1.00e+00   eps : -1.45e-09   step: 1.45e-04    0.00
+         res : 5.51e-08   lamb: 1.00e+00   eps : -1.45e-09   step: 1.45e-04    0.00
+         res : 1.31e-08   lamb: 1.00e+00   eps : -1.45e-09   step: 1.45e-04    0.00
+      7  0      -109.08979721     1.32e-07      0.01
+
+         res : 1.70e-06   lamb: 1.00e+00   eps : -1.63e-11   step: 1.34e-05    0.00
+         res : 6.77e-07   lamb: 1.00e+00   eps : -1.93e-11   step: 1.65e-05    0.00
+         res : 1.60e-07   lamb: 1.00e+00   eps : -1.94e-11   step: 1.67e-05    0.00
+         res : 3.45e-08   lamb: 1.00e+00   eps : -1.94e-11   step: 1.67e-05    0.00
+         res : 6.72e-09   lamb: 1.00e+00   eps : -1.94e-11   step: 1.67e-05    0.00
+         res : 1.60e-09   lamb: 1.00e+00   eps : -1.94e-11   step: 1.67e-05    0.00
+      8  0      -109.08979721     1.57e-08      0.01
+
+         res : 1.96e-07   lamb: 1.00e+00   eps : -2.22e-13   step: 1.55e-06    0.00
+         res : 7.85e-08   lamb: 1.00e+00   eps : -2.62e-13   step: 1.90e-06    0.00
+         res : 1.93e-08   lamb: 1.00e+00   eps : -2.63e-13   step: 1.93e-06    0.00
+         res : 4.22e-09   lamb: 1.00e+00   eps : -2.63e-13   step: 1.93e-06    0.00
+      9  0      -109.08979721     1.94e-09      0.01
+
+    * Second-order optimization converged. *   
+
+    * Integral transformation done. Elapsed time: 0.00
+
+     guess   0:   closed 111...               open ......              
+
+  === FCI iteration ===
+
+      0  0      -108.95119176     2.94e-02      0.00
+      1  0      -109.07588789     1.04e-02      0.00
+      2  0      -109.08897864     2.21e-03      0.00
+      3  0      -109.08978174     3.81e-04      0.00
+      4  0      -109.08979713     2.53e-05      0.00
+      5  0      -109.08979721     2.96e-06      0.00
+      6  0      -109.08979721     4.15e-07      0.00
+      7  0      -109.08979721     6.15e-08      0.00
+      8  0      -109.08979721     5.59e-09      0.00
+      9  0      -109.08979721     5.26e-10      0.00
+     10  0      -109.08979721     1.06e-10      0.00
+     11  0 *    -109.08979721     2.09e-11      0.00
+
+     * ci vector, state   0, <S^2> = 0.0000
+       222...    -0.9670689681
+       22.2..     0.1216522483
+       2.2.2.     0.1216522483
+       2baba.     0.0771822148
+       2abab.     0.0771822148
+    * Permanent dipole moment:
+           (   -0.000000,     0.000000,    -0.000000) a.u.
+
+
+    * METHOD: CASSCF                               0.16
+
+  === SMITH program ===
+
+    * Approximate memory requirement for SMITH calculation per MPI process:
+      o Storage requirement for T-amplitude, lambda, and residual is 0.01 GB
+      o Storage requirement for MO integrals is 0.00 GB
+       - MO integral evaluation                    0.01
+    * Calculating and saving rdm4
+
+    - linear dependency detected:    2 /   72    min eigenvalue:    -2.3030e-16    max eigenvalue:     5.0730e-17
+    - linear dependency detected:   14 /  216    min eigenvalue:    -2.1305e-15    max eigenvalue:     1.8522e-16
+    - linear dependency detected:   14 /  216    min eigenvalue:    -8.5491e-16    max eigenvalue:     1.1838e-15
+       - RDM + denominator evaluation              2.65
+
+    * Zeroth order energy : state  0       -4.2310926454
+
+    * CASPT2 iteration is performed using redundant basis
+
+      ---- iteration ----
+
+        0    -0.16558901     0.01413710      0.02
+        1    -0.16847786     0.00289528      0.02
+        2    -0.16860447     0.00061694      0.02
+        3    -0.16861477     0.00020304      0.02
+        4    -0.16861583     0.00004420      0.02
+        5    -0.16861588     0.00001017      0.02
+        6    -0.16861588     0.00000168      0.02
+        7    -0.16861588     0.00000041      0.02
+
+      -------------------
+
+       - CASPT2 energy evaluation                  0.16
+
+    * CASPT2 energy : state  0     -109.2584130900
+        reference weight              0.9560258265
+
+
+    * METHOD: SMITH                                2.84
+
+
+  
+  ===============================================================
+
