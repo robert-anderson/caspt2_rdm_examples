@@ -8,7 +8,7 @@ The system in question is the ground state of N2. and the methods used are RHF, 
 
 ```
 Basis set:               cc-pVDZ            
-Density-fitting basis:   cc-pVTZ-jkfit      
+Density-fitting basis:   cc-pVDZ-jkfit      
 Bond length:             1.098 Angstrom     
 No. inactive MOs:        4                  
 No. active MOs:          6                  

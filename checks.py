@@ -7,8 +7,12 @@ load spinfree RDM and CASPT2 intermediate tensors and demonstrate consistency wi
 
 all expectation value arrays (RDMs and PT2 intermediates) are normal-ordered but indexed 
 in creation-annihilation pairs i.e.
-rdm2[a, i, b, j] = sum_s,t <a_s b_t j_t i_s>
-where the sum runs over spin indices
+rdm1[a, i] = sum_s <a_s* i_s>
+rdm2[a, i, b, j] = sum_s,t <a_s* b_t* j_t i_s>
+rdm3[a, i, b, j, c, k] = sum_s,t,u <a_s* b_t* c_u* k_u j_t i_s>
+rdm4f[a, i, b, j, c, k] = sum_s,t,u,v sum_d,l F_d,l <a_s* b_t* c_u* d_v* l_v k_u j_t i_s>
+where the sums run over spin indices (alpha, beta), a_s signifies the annihilation of an electron in the s spin function of orbital a
+and a_s* signifies the corresponing creation operator
 '''
 
 import numpy as np
